@@ -1,0 +1,26 @@
+body{
+    background-color: #e5e5e5;
+}
+
+.container{
+    background-color: salmon;
+    border: 1px solid #000;
+    border-radius: 7px;
+    display: grid;
+    /** numero de columnas en la cuadricula */
+    /*? unidad 'fr' 1fr -> 100%, 2fr -> 50%, 3fr -> 25%, => 100% / fr  */
+    grid-template-columns: repeat(3, 1fr);
+    /** numero de filas en la cuadrilla */
+    grid-auto-rows: 200px;
+    /*todo: grid-auto-rows: define el tamaño de las filas automaticas */
+    /*todo: grid-auto-flow: define como se generan los espacios automaticos ej: row, column, dense */
+    /*todo: minmax(MedidaMinima, numeroFr) */
+    /*todo: column-gap: separa las cuadriculas */
+    
+}
+
+.container div {
+    background-color: lightblue;
+    border: 2px solid #09f;
+    border-radius: 7px;
+}
